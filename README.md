@@ -71,3 +71,15 @@
 |	49	|	958	|	9	|	0.65	:	0.35	|	
 |	50	|	959	|	40	|	0.64	:	0.36	|	
 |	51	|	973	|	9	|	0.67	:	0.33	|	
+
+
+[163 classifier configurations]
+  
+| **Classifier** | **Hyperparameters** | **#Configurations** | 
+|:--------:|:--------:|
+|	Logistic Regression	|	C: [0.001,0.01,0.1,1,10,100,1000]| 7 |	
+|	Decision Tree	|	max_depth: [10,20,30,None], min_samples_split:[2,4,6], min_samples_leaf:[1,2,3]	|	36 |
+|	Random Forest	|	n_estimators: [50,100,150,200], max_depth: [10,20,None], min_samples_leaf:[1,2,4]	|	36 |
+|	Support Vector Machine |	C: [0.1,1,10], kernel: [rbf,sigmoid], gamma:[scale,auto,0.1,1]	| 24 |	
+| K Nearest Neighbor | n_neighbors: [3,5,7], p: [1,2], metric: [manhattan,minkowski] | 12 |
+| Light GBM | boosting_type: [gbdt,dart,goss], max_depth:[10,20], learning_rate: [0.01,0.05], n_estimators: [50,100,150,200] | 48 |
